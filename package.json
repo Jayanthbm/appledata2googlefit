@@ -1,0 +1,19 @@
+{
+  "name": "appledata2googlefit",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Jayanthbharadwaj M",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cli-progress": "^3.12.0",
+    "googleapis": "^160.0.0",
+    "uuid": "^13.0.0",
+    "xml2js": "^0.6.2"
+  }
+}

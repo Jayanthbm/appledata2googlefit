@@ -1,0 +1,25 @@
+----------- Updated ----------
+
+Height	com.google.height	User's height in meters.
+
+Weight (Body Mass). com.google.weight  Body mass in kilograms (kgs).
+
+Body Fat	com.google.body.fat.percentage	Body fat percentage.
+
+Steps - com.google.step_count.delta (A batch of steps taken over a time period (used by pedometers/trackers))
+
+Physical Activity - com.google.activity.segment (e.g., Running, Cycling, Walking, Meditation).
+
+Calories - com.google.calories.expended Calories burned (active calories).
+
+
+--- Not Working -------
+
+
+Oxygen Saturation com.google.oxygen_saturation Blood oxygen level (SpO2) percentage.
+BMI	com.google.body.mass.index	Body Mass Index (BMI).
+Distance - com.google.distance.delta Distance travelled (e.g., in meters).
+
+Heart Rate com.google.heart_rate.bpm Instantaneous heart rate in beats per minute (bpm).
+
+Sleep com.google.activity.segment	Sleep sessions segmented by sleep stages (e.g., Light Sleep, Deep Sleep, Awake).
