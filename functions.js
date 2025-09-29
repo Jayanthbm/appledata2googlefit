@@ -1,8 +1,9 @@
 const fs = require("fs");
 const { google } = require("googleapis");
 const axios = require("axios");
+const readline = require("readline");
+const open = async (url) => (await import("open")).default(url);
 const { TOKEN_PATH, SCOPES, APP_NAME } = require("./constants");
-const cliProgress = require("cli-progress");
 
 // ---------- GOOGLE AUTH ----------
 async function authorize() {
@@ -19,8 +20,7 @@ async function authorize() {
 
    const authUrl = oAuth2Client.generateAuthUrl({ access_type: "offline", scope: SCOPES });
    console.log("Authorize this app by visiting this URL:", authUrl);
-
-   const readline = require("readline");
+   await open(authUrl);
    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
    const code = await new Promise((resolve) =>
       rl.question("Enter the code from that page here: ", (ans) => {
